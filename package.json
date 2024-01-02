@@ -11,10 +11,9 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "runUI": "npx cypress run --headed --config-file cypress.config.js --spec 'cypress\\e2e\\ui-test.cy.js'",
+    "runAPI": "npx cypress run --headed --config-file cypress.config.js --spec 'cypress\\e2e\\api-tests.cy.js'",
+    "runAllTests": "npx cypress run --headed"
   },
   "eslintConfig": {
     "extends": "react-app"
